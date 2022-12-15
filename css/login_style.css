@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../image/cimages.jpg);
+    background-repeat: repeat;
+    font-family: sans-serif;
+}
+
+div.Box_Login {
+    width: 320px;
+    height: 415px;
+    color: #fff;
+    background-color: rgb(0, 0, 0, 0.7);
+    top: 12%;
+    left: 37%;
+    box-sizing: border-box;
+    position: absolute;
+    transform: translate(-50% -50%);
+    padding: 38px 22px;
+    border-radius: 40px;
+    border: 1px solid white;
+    box-shadow: -10px 8px 15px;
+}
+
+img.imalogo {
+    width: 184px;
+    height: 89px;
+    border-radius: 59%;
+    position: absolute;
+    top: -45px;
+    right: 68px;
+
+}
+
+div.Box_Login h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-family: "pacifco", cursive;
+    font-size: 30px;
+    color: #cf3a3a;
+}
+
+div.Box_Login label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+div.Box_Login input {
+    width: 238px;
+    margin-bottom: 2px;
+}
+
+div.Box_Login input[type="text"],
+input[type="password"] {
+    border: none;
+    border-bottom: 1px white solid;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+}
+
+div.Box_Login input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #62861d;
+    ;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    font-family: "pacifco", cursive;
+}
+
+div.Box_Login input[type="submit"]:hover {
+    cursor: pointer;
+    background: #63ca0e;
+    color: white;
+
+}
+
+div.Box_Login a {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 51px;
+    color: darkgray;
+
+}
+
+div.Box_Login a:hover {
+    color: rgb(251, 255, 0);
+    font-size: 16px;
+
+}
