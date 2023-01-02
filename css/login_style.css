@@ -1,40 +1,81 @@
+* {
+    /* meaning do this for all elements 
+    it's using to make elements don't change content
+    */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+@media(min-width:768px) {
+    .container {
+        width: 750px;
+    }
+
+}
+
+/* 2-medim */
+@media(min-width:px) {
+    .container {
+        width: 970px;
+    }
+
+}
+
+/* 3-larg */
+@media(min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+
+}
+
 body {
-    margin: 0;
-    padding: 0;
     background-image: url(../image/HDWallpape.jpg);
     background-size: cover;
-    /* background-repeat: repeat; */
+    /* background-repeat: content; */
     font-family: sans-serif;
 }
 
-div.Box_Login {
-    width: 320px;
-    height: 415px;
-    color: #fff;
-    background-color: rgb(0, 0, 0, 0.7);
-    top: 12%;
-    left: 37%;
-    box-sizing: border-box;
+.Box_Login .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Box_Login .container .form_s {
     position: absolute;
-    transform: translate(-50% -50%);
+    background-color: rgb(0, 0, 0, 0.7);
+    width: 320px;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     padding: 38px 22px;
     border-radius: 40px;
     border: 1px solid white;
     box-shadow: -10px 8px 15px;
 }
 
-img.imalogo {
+.imalogo {
+    position: absolute;
     width: 184px;
     height: 89px;
     border-radius: 59%;
-    position: absolute;
     top: -45px;
     right: 68px;
 
 }
 
-div.Box_Login h1 {
-    margin: 0;
+.form_s h1 {
     padding: 18px 0 20px;
     text-align: center;
     font-family: "pacifco", cursive;
@@ -42,31 +83,29 @@ div.Box_Login h1 {
     color: #cf3a3a;
 }
 
-div.Box_Login label {
-    margin: 0;
-    padding: 0;
+.form_s label {
     font-weight: bold;
+    letter-spacing: 0.5px
 }
 
-div.Box_Login input {
+.form_s input {
     width: 238px;
-    margin-bottom: 2px;
+    margin-bottom: 15px;
 }
 
-div.Box_Login input[type="text"],
+.form_s input[type="text"],
 input[type="password"] {
     border: none;
     border-bottom: 1px white solid;
     background: transparent;
-    outline: none;
     height: 40px;
     color: white;
     font-size: 16px;
 }
 
-div.Box_Login input[type="submit"] {
+.form_s input[type="submit"] {
     border: none;
-    outline: none;
+    /* outline: none; */
     height: 40px;
     background: #62861d;
     ;
@@ -76,14 +115,14 @@ div.Box_Login input[type="submit"] {
     font-family: "pacifco", cursive;
 }
 
-div.Box_Login input[type="submit"]:hover {
+.form_s input[type="submit"]:hover {
     cursor: pointer;
     background: #63ca0e;
     color: white;
 
 }
 
-div.Box_Login a {
+.form_s a {
     text-decoration: none;
     font-size: 16px;
     line-height: 51px;
@@ -91,7 +130,7 @@ div.Box_Login a {
 
 }
 
-div.Box_Login a:hover {
+.form_s a:hover {
     color: rgb(251, 255, 0);
     font-size: 16px;
 
